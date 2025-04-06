@@ -1,0 +1,2 @@
+Zadanie 1 - Opis zadania 1 - 10.12.2025 - Wykonane?: True - Priorytet: 0
+Zadanie 2 - Opis zadania 2 - 31.12.2026 - Wykonane?: False - Powtarzalnosc: dzien

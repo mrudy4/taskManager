@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: module zadania</title>
+</head><body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">zadania</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:c%3A%5Cdev%5Czad2py%5Czadania.py">c:\dev\zad2py\zadania.py</a></td></tr></table>
+    <p></p>
+<p>
+<table class="section">
+<tr class="decor pkg-content-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Modules</strong></td></tr>
+    
+<tr><td class="decor pkg-content-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><table><tr><td class="multicolumn"><a href="pydoc.html">pydoc</a><br>
+</td><td class="multicolumn"></td><td class="multicolumn"></td><td class="multicolumn"></td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor index-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Classes</strong></td></tr>
+    
+<tr><td class="decor index-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl>
+<dt class="heading-text"><a href="builtins.html#object">builtins.object</a>
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="zadania.html#ManagerZadan">ManagerZadan</a>
+</dt><dt class="heading-text"><a href="zadania.html#Zadanie">Zadanie</a>
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="zadania.html#ZadaniePriorytetowe">ZadaniePriorytetowe</a>
+</dt><dt class="heading-text"><a href="zadania.html#ZadanieRegularne">ZadanieRegularne</a>
+</dt></dl>
+</dd>
+</dl>
+</dd>
+</dl>
+ <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="ManagerZadan">class <strong>ManagerZadan</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">Klasa&nbsp;reprezentująca&nbsp;managera&nbsp;zadań.<br>
+Klasa&nbsp;zawiera&nbsp;metody&nbsp;do&nbsp;zarządzania&nbsp;zadaniami&nbsp;oraz&nbsp;przechowuje&nbsp;listę&nbsp;zadań.<br>
+W&nbsp;jej&nbsp;skład&nbsp;wchodzą&nbsp;również&nbsp;metody,&nbsp;które&nbsp;pozwalają&nbsp;na&nbsp;zapisywanie&nbsp;i&nbsp;odczytywanie&nbsp;zadań&nbsp;z&nbsp;pliku.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn">Methods defined here:<br>
+<dl><dt><a name="ManagerZadan-__contains__"><strong>__contains__</strong></a>(self, item)</dt><dd><span class="code">Implementacja&nbsp;metody&nbsp;__contains__.<br>
+Metoda&nbsp;sprawdza,&nbsp;czy&nbsp;zadanie&nbsp;znajduje&nbsp;się&nbsp;na&nbsp;liście&nbsp;zadań.<br>
+:param&nbsp;item:&nbsp;reprezentuje&nbsp;element&nbsp;w&nbsp;liscie&nbsp;zadania</span></dd></dl>
+
+<dl><dt><a name="ManagerZadan-__init__"><strong>__init__</strong></a>(self)</dt><dd><span class="code">Implementacja&nbsp;konstruktora&nbsp;klasy&nbsp;<a href="#ManagerZadan">ManagerZadan</a>.<br>
+Konstruktor&nbsp;inicjalizuje&nbsp;pustą&nbsp;listę&nbsp;zadań.</span></dd></dl>
+
+<dl><dt><a name="ManagerZadan-dodaj_zadanie"><strong>dodaj_zadanie</strong></a> = wrapper(*args, **kwargs)<span class="grey"><span class="heading-text"> from dekorator.log_arguments.<locals></span></span></dt></dl>
+
+<dl><dt><a name="ManagerZadan-edytuj_zadanie"><strong>edytuj_zadanie</strong></a>(self, zadanie, **kwargs)</dt><dd><span class="code">Implementacja&nbsp;metody&nbsp;edytuj_zadanie.<br>
+Metoda&nbsp;pozwala&nbsp;na&nbsp;edycję&nbsp;zadania.&nbsp;Na&nbsp;podstawie&nbsp;podanych&nbsp;argumentów&nbsp;podczas&nbsp;wywołania&nbsp;można&nbsp;zmienić&nbsp;tytuł,&nbsp;opis&nbsp;lub&nbsp;termin&nbsp;wykonania&nbsp;zadania.<br>
+:param&nbsp;zadanie:&nbsp;obiekt,&nbsp;który&nbsp;reprezentuje&nbsp;jedno&nbsp;zadanie<br>
+:param&nbsp;**kwargs:&nbsp;lista&nbsp;argumentów</span></dd></dl>
+
+<dl><dt><a name="ManagerZadan-odczytaj_zadania_z_pliku"><strong>odczytaj_zadania_z_pliku</strong></a> = wrapper(*args, **kwargs)<span class="grey"><span class="heading-text"> from dekorator.time_consumption.<locals></span></span></dt></dl>
+
+<dl><dt><a name="ManagerZadan-oznacz_jako_wykonane"><strong>oznacz_jako_wykonane</strong></a>(self, zadanie)</dt><dd><span class="code">Implementacja&nbsp;metody&nbsp;oznacz_jako_wykonane.<br>
+Metoda&nbsp;oznacza&nbsp;zadanie&nbsp;jako&nbsp;wykonane.<br>
+:param&nbsp;zadanie:&nbsp;obiekt,&nbsp;który&nbsp;reprezentuje&nbsp;jedno&nbsp;zadanie</span></dd></dl>
+
+<dl><dt><a name="ManagerZadan-usun_zadanie"><strong>usun_zadanie</strong></a>(self, zadanie)</dt><dd><span class="code">Implementacja&nbsp;metody&nbsp;usun_zadanie.<br>
+Metoda&nbsp;usuwa&nbsp;zadanie&nbsp;z&nbsp;listy&nbsp;zadań.<br>
+:param&nbsp;zadanie:&nbsp;obiekt,&nbsp;który&nbsp;reprezentuje&nbsp;jedno&nbsp;zadanie</span></dd></dl>
+
+<dl><dt><a name="ManagerZadan-zapisz_zadania_do_pliku"><strong>zapisz_zadania_do_pliku</strong></a> = wrapper(*args, **kwargs)<span class="grey"><span class="heading-text"> from dekorator.time_consumption.<locals></span></span></dt></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Zadanie">class <strong>Zadanie</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#Zadanie">Zadanie</a>(tytul,&nbsp;opis,&nbsp;termin_wykonania)<br>
+&nbsp;<br>
+Klasa&nbsp;reprezentująca&nbsp;zadanie.<br>
+Jest&nbsp;to&nbsp;klasa&nbsp;nadrzędna.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn">Methods defined here:<br>
+<dl><dt><a name="Zadanie-__init__"><strong>__init__</strong></a>(self, tytul, opis, termin_wykonania)</dt><dd><span class="code">Implementacja&nbsp;kontruktora&nbsp;klasy&nbsp;<a href="#Zadanie">Zadanie</a>.<br>
+Konstruktor&nbsp;przyjumje&nbsp;podstawowe&nbsp;parametry&nbsp;zadania&nbsp;oraz<br>
+inicjalizuje&nbsp;atrybuty&nbsp;podczas&nbsp;tworzenia&nbsp;obiektu.<br>
+&nbsp;<br>
+:param&nbsp;tytul:&nbsp;tytuł&nbsp;zadania<br>
+:param&nbsp;opis:&nbsp;opis&nbsp;zadania<br>
+:param&nbsp;termin_wykonania:&nbsp;termin&nbsp;wykonania&nbsp;zadania<br>
+:param&nbsp;wykonane:&nbsp;czy&nbsp;zadanie&nbsp;jest&nbsp;wykonane</span></dd></dl>
+
+<dl><dt><a name="Zadanie-__str__"><strong>__str__</strong></a>(self)</dt><dd><span class="code">Implementacja&nbsp;metody&nbsp;__str__.<br>
+Metoda&nbsp;zwraca&nbsp;stringa&nbsp;z&nbsp;danymi&nbsp;zadania.</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="ZadaniePriorytetowe">class <strong>ZadaniePriorytetowe</strong></a>(<a href="zadania.html#Zadanie">Zadanie</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#ZadaniePriorytetowe">ZadaniePriorytetowe</a>(tytul,&nbsp;opis,&nbsp;termin_wykonania,&nbsp;priorytet)<br>
+&nbsp;<br>
+Klasa&nbsp;reprezentująca&nbsp;zadanie&nbsp;priorytetowe.<br>
+Jest&nbsp;to&nbsp;klasa&nbsp;pochodna.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="zadania.html#ZadaniePriorytetowe">ZadaniePriorytetowe</a></dd>
+<dd><a href="zadania.html#Zadanie">Zadanie</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="ZadaniePriorytetowe-__init__"><strong>__init__</strong></a>(self, tytul, opis, termin_wykonania, priorytet)</dt><dd><span class="code">Implementacja&nbsp;konstruktora&nbsp;klasy&nbsp;<a href="#ZadaniePriorytetowe">ZadaniePriorytetowe</a>.<br>
+:param&nbsp;priorytet:&nbsp;priorytet&nbsp;zadania</span></dd></dl>
+
+<dl><dt><a name="ZadaniePriorytetowe-__str__"><strong>__str__</strong></a>(self)</dt><dd><span class="code">Implementacja&nbsp;metody&nbsp;__str__.</span></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="zadania.html#Zadanie">Zadanie</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="ZadanieRegularne">class <strong>ZadanieRegularne</strong></a>(<a href="zadania.html#Zadanie">Zadanie</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#ZadanieRegularne">ZadanieRegularne</a>(tytul,&nbsp;opis,&nbsp;termin_wykonania,&nbsp;powtarzalnosc)<br>
+&nbsp;<br>
+Klasa&nbsp;reprezentująca&nbsp;zadanie&nbsp;regularne.<br>
+Jest&nbsp;to&nbsp;klasa&nbsp;pochodna.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="zadania.html#ZadanieRegularne">ZadanieRegularne</a></dd>
+<dd><a href="zadania.html#Zadanie">Zadanie</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="ZadanieRegularne-__init__"><strong>__init__</strong></a>(self, tytul, opis, termin_wykonania, powtarzalnosc)</dt><dd><span class="code">Implementacja&nbsp;konstruktora&nbsp;klasy&nbsp;<a href="#ZadanieRegularne">ZadanieRegularne</a>.<br>
+:param&nbsp;powtarzalnosc:&nbsp;powtarzalnosc&nbsp;zadania</span></dd></dl>
+
+<dl><dt><a name="ZadanieRegularne-__str__"><strong>__str__</strong></a>(self)</dt><dd><span class="code">Implementacja&nbsp;metody&nbsp;__str__.</span></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="zadania.html#Zadanie">Zadanie</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+</td></tr></table></td></tr></table>
+</body></html>
