@@ -1,2 +1,5 @@
-To oprogramowanie służy do zarządzania zadaniami.
+## Task manager
+Proste oprogramowanie testowe do zarządzania zadaniami w terminalu.
+
+## License
 Licencja open-source
